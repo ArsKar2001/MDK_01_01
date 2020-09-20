@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="MDK_01_01_javaFX:jar">
+  <artifact type="jar" build-on-make="true" name="MDK_01_01_javaFX:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/MDK_01_01_javaFX_jar</output-path>
     <root id="archive" name="MDK_01_01_javaFX.jar">
       <element id="module-output" name="MDK_01_01_javaFX" />

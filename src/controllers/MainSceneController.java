@@ -1,10 +1,10 @@
-package Controllers;
+package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import Classes.Main;
-import Classes.NewScene;
+import launching.Main;
+import interfaces.NewScene;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

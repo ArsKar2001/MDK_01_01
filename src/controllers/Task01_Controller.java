@@ -1,19 +1,17 @@
-package Controllers;
+package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import Classes.Main;
-import Classes.NewScene;
+import launching.Main;
+import interfaces.NewScene;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ProgressIndicator;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class Task01_Controller implements NewScene {

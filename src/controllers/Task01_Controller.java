@@ -3,6 +3,7 @@ package controllers;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import algorithms.Task_01;
 import launching.Main;
 import interfaces.NewScene;
 import javafx.fxml.FXML;
@@ -44,28 +45,15 @@ public class Task01_Controller implements NewScene {
 
     private void BtnClickCancel() {
         btn_Cancel.setOnAction(event -> {
-            SetScene("../sample/MainScene.fxml", btn_Cancel);
+            SetScene("/display/MainScene.fxml", btn_Cancel);
         });
         btn_Execute.setOnAction(event -> {
             if(strField.getText() != null && charField != null && charField.getLength() == 1) {
-                ExecuteTask01();
+                Task_01 task01 = new Task_01(strField.getText(), charField.getText());
+                lbResult.setText(task01.Execute());
             } else
                 lbResult.setText("");
         });
-    }
-
-    private void ExecuteTask01() {
-        String str = strField.getText();
-        String str1 = charField.getText();
-        double var = 100.0 / str.length();
-        int factor = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == str1.charAt(0)) {
-                factor++;
-            }
-        }
-        var *= factor;
-        lbResult.setText(var + "%");
     }
 
     @Override

@@ -72,10 +72,10 @@ public class MainSceneController implements NewScene {
 
     private void BtnClicks() {
         btn_task1.setOnAction(event -> {
-            SetScene("../sample/task_01.fxml", btn_task1);
+            SetScene("/display/task_01.fxml", btn_task1);
         });
         btn_task2.setOnAction(event -> {
-            SetScene("../sample/task_02.fxml", btn_task1);
+            SetScene("/display/task_02.fxml", btn_task1);
         });
     }
 

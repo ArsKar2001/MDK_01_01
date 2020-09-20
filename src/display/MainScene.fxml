@@ -38,7 +38,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task2" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 2" textFill="WHITE" GridPane.columnIndex="1">
@@ -47,7 +47,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task3" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 3" textFill="WHITE" GridPane.columnIndex="2">
@@ -56,7 +56,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task5" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 4" textFill="WHITE" GridPane.rowIndex="1">
@@ -65,7 +65,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task6" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -74,7 +74,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task7" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -83,7 +83,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task4" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 7" textFill="WHITE" GridPane.columnIndex="3">
@@ -92,7 +92,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task8" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 8" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
@@ -101,7 +101,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task9" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 9" textFill="WHITE" GridPane.rowIndex="2">
@@ -110,7 +110,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task10" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -119,7 +119,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task11" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 11" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -128,7 +128,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task12" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 12" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
@@ -137,7 +137,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task13" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 13" textFill="WHITE" GridPane.rowIndex="3">
@@ -146,7 +146,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task14" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 14" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
@@ -155,7 +155,7 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
             <Button fx:id="btn_task15" mnemonicParsing="false" styleClass="buttonStyle" text="Задача 15" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
@@ -164,14 +164,14 @@
                </font>
                <stylesheets>
                   <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/MainStyle.css" />
+                  <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
          </children>
       </GridPane>
       <AnchorPane style="-fx-background-color: #3C3F41;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="21.0" stylesheets="@../styles/MainStyle.css" text="Выберите задачу" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="21.0" stylesheets="@../styles/mainStyle.css" text="Выберите задачу" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
                <font>
                   <Font name="SF Pro Display Regular" size="24.0" />
                </font>

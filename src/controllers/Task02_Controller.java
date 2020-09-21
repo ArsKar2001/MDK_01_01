@@ -1,16 +1,10 @@
 package controllers;
 
-import algorithms.Task_01;
 import algorithms.Task_02;
-import javafx.scene.control.Label;
-import launching.Main;
 import interfaces.NewScene;
+import javafx.scene.control.Label;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
 
 public class Task02_Controller implements NewScene {
 
@@ -35,12 +29,12 @@ public class Task02_Controller implements NewScene {
 
     @FXML
     void initialize() {
-        BtnClickCancel();
+        BtnClick();
         Execute();
     }
-    private void BtnClickCancel() {
+    private void BtnClick() {
         btn_Cancel.setOnAction(event -> {
-            SetScene("/display/MainScene.fxml", btn_Cancel);
+            Load("/display/MainScene.fxml", btn_Cancel);
         });
         btn_Execute.setOnAction(actionEvent -> {
             Execute();
@@ -52,16 +46,5 @@ public class Task02_Controller implements NewScene {
         lbResSum.setText(task02.OutputSumRows());
         lbResMul.setText(task02.OutputMulColumns());
         lbResNum.setText(task02.OutputNumberOfMainDiagonal());
-    }
-    @Override
-    public void SetScene(String str, Button button) {
-        try {
-            Stage primaryStage = (Stage) button.getScene().getWindow();
-            Parent root = FXMLLoader.load(Main.class.getResource(str));
-            primaryStage.setScene(new Scene(root,700, 500));
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }

@@ -3,14 +3,10 @@ package controllers;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import launching.Main;
 import interfaces.NewScene;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
+import javafx.scene.input.MouseEvent;
 
 public class MainSceneController implements NewScene {
 
@@ -72,22 +68,25 @@ public class MainSceneController implements NewScene {
 
     private void BtnClicks() {
         btn_task1.setOnAction(event -> {
-            SetScene("/display/task_01.fxml", btn_task1);
+            Load("/display/task_01.fxml", btn_task1);
         });
         btn_task2.setOnAction(event -> {
-            SetScene("/display/task_02.fxml", btn_task1);
+            Load("/display/task_02.fxml", btn_task2);
         });
-    }
-
-    @Override
-    public void SetScene(String str, Button button) {
-        try {
-            Stage primaryStage = (Stage) button.getScene().getWindow();
-            Parent root = FXMLLoader.load(Main.class.getResource(str));
-            primaryStage.setScene(new Scene(root,700, 500));
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
+        btn_task3.setOnAction(event -> {
+            Load("/display/task_03.fxml", btn_task3);
+        });
+        btn_task4.setOnAction(event -> {
+            Load("/display/task_04.fxml", btn_task4);
+        });
+        btn_task5.setOnAction(event -> {
+            Load("/display/task_05.fxml", btn_task5);
+        });
+        btn_task6.setOnAction(event -> {
+            Load("/display/task_06.fxml", btn_task6);
+        });
+        btn_task7.setOnAction(event -> {
+            Load("/display/task_07.fxml", btn_task7);
+        });
     }
 }

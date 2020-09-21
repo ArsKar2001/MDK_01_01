@@ -8,18 +8,18 @@
 }
 .buttonStyle:hover {
     -fx-background-color: #3E86A0;
-    -fx-text-fill: #ffff;
+    -fx-text-fill: #ffffff;
 }
 .buttonStyle:focused {
-    -fx-text-fill: #ffff;
+    -fx-text-fill: #AFB1B3;
 }
 .buttonMenu {
     -fx-font-size: 20;
-    -fx-background-color: #ffff;
+    -fx-background-color: #ffffff;
     -fx-font-weight: bold;
     -fx-text-fill: #3C3F41;
 }
 .buttonMenu:hover {
     -fx-background-color: #3E86A0;
-    -fx-text-fill: #ffff;
+    -fx-text-fill: #ffffff;
 }

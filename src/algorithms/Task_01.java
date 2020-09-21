@@ -11,7 +11,7 @@ public class Task_01 {
         this.chStr = chStr;
     }
 
-    public String Execute() {
+    public String ExecuteTask01() {
         double var = 100.0 / str.length();
         int factor = 0;
         for (int i = 0; i < str.length(); i++) {

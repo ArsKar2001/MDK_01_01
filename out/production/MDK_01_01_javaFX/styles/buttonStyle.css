@@ -11,7 +11,7 @@
     -fx-text-fill: #ffffff;
 }
 .buttonStyle:focused {
-    -fx-text-fill: #AFB1B3;
+    -fx-text-fill: #ffffff;
 }
 .buttonMenu {
     -fx-font-size: 20;

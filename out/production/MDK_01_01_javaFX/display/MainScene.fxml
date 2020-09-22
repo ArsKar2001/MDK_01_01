@@ -158,15 +158,6 @@
                   <URL value="@../styles/mainStyle.css" />
                </stylesheets>
             </Button>
-            <Button fx:id="btn_task_15" mnemonicParsing="false" onMouseClicked="#MouseClickedButtons" styleClass="buttonStyle" text="Задача 15" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
-               <font>
-                  <Font name="SF Pro Display Regular" size="20.0" />
-               </font>
-               <stylesheets>
-                  <URL value="@../styles/buttonStyle.css" />
-                  <URL value="@../styles/mainStyle.css" />
-               </stylesheets>
-            </Button>
          </children>
       </GridPane>
       <AnchorPane style="-fx-background-color: #3C3F41;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">

@@ -20,7 +20,7 @@
     <children>
         <AnchorPane style="-fx-background-color: #3C3F41;">
             <children>
-                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="306.0" layoutY="21.0" stylesheets="@../styles/mainStyle.css" text="Задача 9" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="306.0" layoutY="21.0" stylesheets="@../styles/mainStyle.css" text="Задача 14" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
                     <font>
                         <Font name="SF Pro Display Regular" size="24.0" />
                     </font>

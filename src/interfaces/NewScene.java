@@ -15,11 +15,10 @@ public interface NewScene {
         try {
             Stage primaryStage = (Stage) node.getScene().getWindow();
             Parent root = FXMLLoader.load(Main.class.getResource(str));
-            primaryStage.setScene(new Scene(root,primaryStage.getWidth(), primaryStage.getHeight()));
+            primaryStage.setScene(new Scene(root, node.getScene().getWidth(), node.getScene().getHeight()));
         } catch (IOException e) {
-//            Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage() + "\n" + e.getLocalizedMessage(), ButtonType.OK);
-//            alert.showAndWait();
-            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage(), ButtonType.OK);
+            alert.showAndWait();
         }
     }
 }

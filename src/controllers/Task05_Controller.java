@@ -28,7 +28,7 @@ public class Task05_Controller implements NewScene {
 
     private void BtnClick() {
         btn_Cancel.setOnAction(event -> {
-            Load("/display/MainScene.fxml", btn_Cancel);
+            load("/display/MainScene.fxml", btn_Cancel);
         });
         btn_Execute.setOnAction(actionEvent -> {
             Execute();
@@ -37,7 +37,7 @@ public class Task05_Controller implements NewScene {
 
     private void Execute() {
         Task_05 task_05 = new Task_05();
-        lbArray.setText(task_05.OutputArray());
-        lbResult.setText(Task_05.maxValue + " - " + Task_05.minValue + " = " + task_05.Difference());
+        lbArray.setText(task_05.outputArray());
+        lbResult.setText(Task_05.maxValue + " - " + Task_05.minValue + " = " + task_05.difference());
     }
 }

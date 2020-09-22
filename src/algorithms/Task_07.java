@@ -8,7 +8,7 @@ public class Task_07 {
         this.str = str.split(" ");
     }
 
-    public String IsChecked(String strLb) {
+    public String isChecked(String strLb) {
         for (String itVar : str) {
             if(itVar.equalsIgnoreCase(strLb))
                 return "Присутствует";

@@ -1,6 +1,5 @@
 package controllers;
 
-import algorithms.Task_06;
 import algorithms.Task_07;
 import interfaces.NewScene;
 import javafx.fxml.FXML;
@@ -31,7 +30,7 @@ public class Task07_Controller implements NewScene {
     }
     private void BtnClick() {
         btn_Cancel.setOnAction(event -> {
-            Load("/display/MainScene.fxml", btn_Cancel);
+            load("/display/MainScene.fxml", btn_Cancel);
         });
         btn_Execute.setOnAction(actionEvent -> {
             Execute();
@@ -40,6 +39,6 @@ public class Task07_Controller implements NewScene {
 
     private void Execute() {
         Task_07 task_07 = new Task_07(strField.getText());
-        lbResult.setText(task_07.IsChecked(charField.getText()));
+        lbResult.setText(task_07.isChecked(charField.getText()));
     }
 }

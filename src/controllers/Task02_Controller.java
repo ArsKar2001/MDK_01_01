@@ -1,8 +1,8 @@
 package controllers;
 
 import algorithms.Task_02;
-import interfaces.NewScene;
 import javafx.scene.control.Label;
+import interfaces.NewScene;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
@@ -29,12 +29,12 @@ public class Task02_Controller implements NewScene {
 
     @FXML
     void initialize() {
-        BtnClick();
+        BtnClickCancel();
         Execute();
     }
-    private void BtnClick() {
+    private void BtnClickCancel() {
         btn_Cancel.setOnAction(event -> {
-            Load("/display/MainScene.fxml", btn_Cancel);
+            load("/display/MainScene.fxml", btn_Cancel);
         });
         btn_Execute.setOnAction(actionEvent -> {
             Execute();
@@ -43,8 +43,8 @@ public class Task02_Controller implements NewScene {
     private void Execute() {
         Task_02 task02 = new Task_02();
         lbMatrix.setText(task02.OutputMatrix());
-        lbResSum.setText(task02.OutputSumRows());
-        lbResMul.setText(task02.OutputMulColumns());
-        lbResNum.setText(task02.OutputNumberOfMainDiagonal());
+        lbResSum.setText(task02.outputSumRows());
+        lbResMul.setText(task02.outputMulColumns());
+        lbResNum.setText(task02.outputNumberOfMainDiagonal());
     }
 }

@@ -37,7 +37,7 @@ public class Task03_Controller implements NewScene {
 
     private void BtnClick() {
         btn_Cancel.setOnAction(event -> {
-            Load("/display/MainScene.fxml", btn_Cancel);
+            load("/display/MainScene.fxml", btn_Cancel);
         });
         btn_Execute.setOnAction(actionEvent -> {
             Execute();

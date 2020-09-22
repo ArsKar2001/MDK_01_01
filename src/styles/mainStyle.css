@@ -11,3 +11,7 @@
 .textDec {
     -fx-font-size: 16;
 }
+.tableBorders {
+    -fx-border-width: 0 1;
+    -fx-border-color: #3C3F41;
+}

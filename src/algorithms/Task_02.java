@@ -4,13 +4,22 @@ import java.util.Random;
 
 public class Task_02 {
 
+    /**
+     *
+     */
     private static int[][] matrix;
 
+    /**
+     *
+     */
     public Task_02() {
-        GenerateMatrix();
+        generateMatrix();
     }
 
-    public void GenerateMatrix() {
+    /**
+     *
+     */
+    public void generateMatrix() {
         Random random = new Random();
         matrix = new int[10][10];
         for (int i = 0; i < matrix.length; i++) {
@@ -20,7 +29,10 @@ public class Task_02 {
         }
     }
 
-    private int GetNumberOfMainDiagonal() {
+    /**
+     * @return
+     */
+    private int getNumberOfMainDiagonal() {
         int num = matrix[0][0];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
@@ -32,11 +44,18 @@ public class Task_02 {
         return num;
     }
 
-    public String OutputNumberOfMainDiagonal() {
-        return "Наибольшее число главной диагонали: " + GetNumberOfMainDiagonal();
+    /**
+     * @return
+     */
+    public String outputNumberOfMainDiagonal() {
+        return "Наибольшее число главной диагонали: " + getNumberOfMainDiagonal();
     }
 
-    private int SumRows(int indexRow) {
+    /**
+     * @param indexRow
+     * @return
+     */
+    private int sumRows(int indexRow) {
         int sumRow = 0;
         for (int i = 0; i < matrix.length; i++) {
             sumRow += matrix[indexRow][i];
@@ -44,7 +63,11 @@ public class Task_02 {
         return sumRow;
     }
 
-    private int MulColumns(int indexColumns) {
+    /**
+     * @param indexColumns
+     * @return
+     */
+    private int mulColumns(int indexColumns) {
         int mulCol = 1;
         for (int i = 0; i < matrix.length; i++) {
             mulCol *= matrix[i][indexColumns];
@@ -52,21 +75,31 @@ public class Task_02 {
         return mulCol;
     }
 
-    public String OutputSumRows() {
+    /**
+     * @return
+     */
+    public String outputSumRows() {
         String str = "";
         for (int i = 0; i < matrix.length; i++) {
-            str += "Row(" + i + ") -> Sum(" + SumRows(i) + ");\n";
-        }
-        return str;
-    }
-    public String OutputMulColumns() {
-        String str = "";
-        for (int i = 0; i < matrix.length; i++) {
-            str += "Col(" + i + ") -> Mul(" + MulColumns(i) + ");\n";
+            str += "Row(" + i + ") -> Sum(" + sumRows(i) + ");\n";
         }
         return str;
     }
 
+    /**
+     * @return
+     */
+    public String outputMulColumns() {
+        String str = "";
+        for (int i = 0; i < matrix.length; i++) {
+            str += "Col(" + i + ") -> Mul(" + mulColumns(i) + ");\n";
+        }
+        return str;
+    }
+
+    /**
+     * @return
+     */
     public String OutputMatrix() {
         String str = "";
         for (int i = 0; i < matrix.length; i++) {

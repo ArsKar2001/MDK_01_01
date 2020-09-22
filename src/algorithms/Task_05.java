@@ -10,12 +10,12 @@ public class Task_05 {
     public static double minValue;
 
     public Task_05() {
-        GenerateArray();
-        minValue = GetMinValue();
-        maxValue = GetMaxValue();
+        generateArray();
+        minValue = getMinValue();
+        maxValue = getMaxValue();
     }
 
-    private void GenerateArray() {
+    private void generateArray() {
         Random random = new Random();
         arrayDouble = new double[(int) (5 + Math.random() * 10)];
         for (int i = 0; i < arrayDouble.length; i++) {
@@ -23,7 +23,7 @@ public class Task_05 {
         }
     }
 
-    private double GetMinValue() {
+    private double getMinValue() {
         double val = arrayDouble[0];
         for (int i = 0; i < arrayDouble.length; i++) {
             if(val > arrayDouble[i]) val = arrayDouble[i];
@@ -31,7 +31,7 @@ public class Task_05 {
         return val;
     }
 
-    private double GetMaxValue() {
+    private double getMaxValue() {
         double val = arrayDouble[0];
         for (int i = 0; i < arrayDouble.length; i++) {
             if(val < arrayDouble[i]) val = arrayDouble[i];
@@ -39,11 +39,11 @@ public class Task_05 {
         return val;
     }
 
-    public double Difference() {
+    public double difference() {
         return (double) Math.round((maxValue - minValue) * 100) / 100;
     }
 
-    public String OutputArray() {
+    public String outputArray() {
         return Arrays.toString(arrayDouble);
     }
 }

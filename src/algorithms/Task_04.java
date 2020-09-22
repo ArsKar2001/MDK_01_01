@@ -8,10 +8,10 @@ public class Task_04 {
     private static int[] arrayInt;
 
     public Task_04() {
-        GenerateArray();
+        generateArray();
     }
 
-    private void GenerateArray() {
+    private void generateArray() {
         Random random = new Random();
         arrayInt = new int[(int) (5 + Math.random() * 10)];
         for (int i = 0; i < arrayInt.length; i++) {
@@ -19,12 +19,12 @@ public class Task_04 {
         }
     }
 
-    public String OutputSortArray() {
+    public String outputSortArray() {
         Arrays.sort(arrayInt);
         return Arrays.toString(arrayInt);
     }
 
-    public String OutputArray() {
+    public String outputArray() {
         return Arrays.toString(arrayInt);
     }
 }

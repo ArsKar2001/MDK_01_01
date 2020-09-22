@@ -9,10 +9,10 @@ public class Task_06 {
     private static Integer[] arrayInt;
 
     public Task_06() {
-        GenerateArray();
+        generateArray();
     }
 
-    private void GenerateArray() {
+    private void generateArray() {
         Random random = new Random();
         arrayInt = new Integer[5];
         for (int i = 0; i < arrayInt.length; i++) {
@@ -20,20 +20,20 @@ public class Task_06 {
         }
     }
 
-    private Integer[] GetSortBeginArray() {
+    private Integer[] getSortBeginArray() {
         Integer[] sortArray = arrayInt.clone();
         Arrays.sort(sortArray);
         return sortArray;
     }
 
-    private Integer[] GetSortEndArray() {
+    private Integer[] getSortEndArray() {
         Integer[] sortArray = arrayInt.clone();
         Arrays.sort(sortArray, Collections.reverseOrder());
         return sortArray;
     }
 
-    public String GetResult() {
-        if(Arrays.deepEquals(arrayInt, GetSortBeginArray()) || Arrays.deepEquals(arrayInt, GetSortEndArray())) {
+    public String getResult() {
+        if(Arrays.deepEquals(arrayInt, getSortBeginArray()) || Arrays.deepEquals(arrayInt, getSortEndArray())) {
             return "Массив упорядоченный";
         }
         else {
@@ -41,7 +41,7 @@ public class Task_06 {
         }
     }
 
-    public String OutputArray() {
+    public String outputArray() {
         return Arrays.toString(arrayInt);
     }
 }

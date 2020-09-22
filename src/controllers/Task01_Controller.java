@@ -35,19 +35,23 @@ public class Task01_Controller implements NewScene {
 
     @FXML
     void initialize() {
-        BtnClick();
+        btnClickCancel();
     }
 
-    private void BtnClick() {
+    private void btnClickCancel() {
         btn_Cancel.setOnAction(event -> {
-            Load("/display/MainScene.fxml", btn_Cancel);
+            load("/display/MainScene.fxml", btn_Cancel);
         });
         btn_Execute.setOnAction(event -> {
             if(strField.getText() != null && charField != null && charField.getLength() == 1) {
-                Task_01 task01 = new Task_01(strField.getText(), charField.getText());
-                lbResult.setText(task01.ExecuteTask01());
+                execute();
             } else
                 lbResult.setText("");
         });
+    }
+
+    private void execute() {
+        Task_01 task01 = new Task_01(strField.getText(), charField.getText());
+        lbResult.setText(task01.execute());
     }
 }
